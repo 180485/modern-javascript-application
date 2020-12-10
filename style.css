@@ -1,0 +1,169 @@
+
+body {
+ background-image: url(bg.jpg);
+  
+}
+
+  
+ .main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color:hsla(0, 0%, 100%, 0.8);
+  box-shadow:20px 20px 30px -10px #192824;
+  box-sizing:border-box;
+  padding: auto;
+  margin: 90px;
+  margin-left:100px;
+  opacity: 0.7;
+ 
+ }
+ 
+ h1 {
+   margin-top:50px;
+   font-family: 'Righteous', cursive;
+   font-size: 60px;
+   padding: 0;
+   color:mediumvioletred;
+   text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1),
+   0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1),
+   0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1),
+   -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
+   }
+   
+   span {
+   transform: scale(0.9);
+   display: inline-block;
+ }
+ 
+ span:first-child {
+   animation: bop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite
+     alternate;
+ }
+ span:last-child {
+   animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+     infinite alternate;
+ }
+
+
+@keyframes bop {
+ 0% {
+   transform: scale(0.9);
+ }
+ 50%,
+ 100% {
+   transform: scale(1);
+ }
+}
+
+@keyframes bopB {
+ 0% {
+   transform: scale(0.9);
+ }
+ 80%,
+ 100% {
+   transform: scale(1) rotateZ(-3deg);
+ }
+}
+
+ 
+  .button{
+    margin-top:100px;
+    padding: 5px 15px;
+    border: 0 none;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;;
+    margin-left:40px;
+  
+
+  }
+
+
+ 
+
+ h4{
+   margin-top:150px;
+   font-size: 50px;
+   font-family: 'Righteous', cursive;
+   color: #122761;
+
+ }
+
+
+
+ #info{
+  
+  line-height: 0.2;
+   font-size: 50px;
+   font-family: 'Righteous', cursive;
+   color:mediumvioletred;
+   
+ }
+
+ #city {
+  font-family: 'Righteous', cursive;
+   
+ }
+ 
+
+ .dates{
+   display:grid;
+   grid-template-columns: auto auto auto auto auto;
+   grid-gap:10px;
+   font-size: 20px;
+   box-sizing: border-box;
+   margin-left:60px;
+   
+  
+ }
+
+
+ .wrapper{
+   width: 500px;
+   height: 500px;
+   margin: auto;
+   margin-top: 30px;
+   margin-left: 50px;
+   
+   
+ }
+
+ #mixed-chart{
+   margin-top:80px
+   
+
+
+ }
+
+ p{
+   font-size: 15px;
+   color:mediumvioletred;
+ }
+
+ h2{
+   font-size: 20px;
+   color:#162b6a;
+ }
+
+
+
+ @media only screen and (max-width:900px){
+  .main{
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto;
+      text-align: center;
+      width: 450px;
+      margin: auto;
+
+      
+  }
+  .wrapper{
+    width: 370px;
+    height: 370px;
+     margin: auto;
+
+  }
+  
+
+}

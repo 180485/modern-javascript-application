@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">      
+    <link rel ="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+</head>
+
+<body>
+    <div class="main">  
+        <div class="button">
+            <h1><span>Weather</span><span>App</span></h1>
+             <label for="city" id="city">LOCATION</label>
+            <input type="text" id="text"></input>
+            <input type="submit" id="submit">
+        </div>
+         <!--for today weather-->
+            
+            <div class ="info">
+                <h4 id ="output"></h4>
+                <h3  id ="info" ></h3>
+                <h2  id ="info2" ></h2>
+               
+                
+            </div>
+   
+            <!--for 5days weather-->
+        <div class="wrapper">
+        <!--chartjs-->
+        <canvas id="mixed-chart" width="" height=""></canvas>
+            <div class="dates">
+                <div class="dayone">
+                    <p id="dayone"></p>
+                    <p id="text1"></p>
+                </div>
+                <div class="daytwo">
+                    <p id="daytwo"></p>
+                    <p id="text2"></p>
+                 </div>
+                <div class="daythree">
+                    <p id="daythree"></p>
+                    <p id="text3"></p>
+                </div>
+                <div class="dayfour">
+                    <p id="dayfour"></p>
+                    <p id="text4"></p>
+                </div>
+                <div class="dayfive">
+                    <p id="dayfive"></p>
+                    <p id="text5"></p>
+                </div>
+            </div>
+    
+    </div>   
+    <script src="script.js"></script>
+</body>
+</html>
