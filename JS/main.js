@@ -1,3 +1,4 @@
+
 let dayOne ;
 let dayTwo ;
 let dayThree;
@@ -20,11 +21,7 @@ let fore4;
 let fore5;
 
 
-
-
-
-
-document.querySelector("#submit").addEventListener("click", function(e){
+document.querySelector("#submit").addEventListener("click",(e) => {
 
 
 e.preventDefault();
@@ -126,7 +123,6 @@ forecast = (data) =>{
    
    
    
-   
 //making  5 days chart
 chart = (data) =>{
      
@@ -138,7 +134,7 @@ chart = (data) =>{
            label: "5 Days Weather",
            type: "line",
            borderColor: "mediumvioletred",
-           data: [days[0], days[1], days[2], days[3], days[4]],
+           data: days,
            fill: false
              
          }
